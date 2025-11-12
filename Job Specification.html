@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Specification</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23485c;
+    padding: 10px 30px;
+  }
+
+  .logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #1b3749;
+  }
+
+  .sidebar a.active {
+    background-color: #1b3749;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #23485c;
+    color: white;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .job-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .job {
+    margin-bottom: 40px;
+  }
+
+  .job h2 {
+    color: #23485c;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .job p {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  .qualifications {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-left: 5px solid #23485c;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .qualifications ul {
+    margin: 10px 0 0 20px;
+  }
+
+  .qualifications li {
+    margin-bottom: 8px;
+  }
+
+  .footer {
+    background-color: #23485c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c4f2b5;
+  }
+
+  .footer p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #c4f2b5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .job-section {
+      margin: 30px 20px;
+      padding: 25px;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+
+    .footer h2 {
+      font-size: 22px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="logo.png.png" alt="Hot Beans Logo">
+    </div>
+
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="Company Profile.html">Company Profile</a>
+      <a href="Employee Profiles.html">Employee Profiles</a>
+      <a href="Web Development Courses.html">Web Development Courses</a>
+      <a href="About Us.html">About Us</a>
+      <a href="Job Specification.html" class="active">Job Specification</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>Job Specifications</h1>
+    <p>Explore the exciting job opportunities available at Hot Beans Web Development</p>
+  </div>
+
+  <div class="job-section">
+    <div class="job">
+      <h2>Javascript Assistant Developer</h2>
+      <p>
+        Our Javascript Assistant Developers are responsible for checking over any Javascript produced by the team.
+		They are also there to aid with any issues regarding Javascript and provide a quality final product.
+      </p>
+      <div class="qualifications">
+        <strong>Qualifications Required:</strong>
+        <ul>
+          <li>Degree or equivalent experience in Maths or Computer Science</li>
+          <li>Strong knowledge surrounding HTML, CSS, and JavaScript</li>
+          <li>Completion of Javascript further training course</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <h2>Assistant Management Director</h2>
+      <p>
+        As our Assistant Management Director, your role is to ensure all of our employees are completing their work
+		to their best standard, and making sure that customer satisfaction is prioritised. Additionally, you need to
+		ensure that employees all recieve the correct wages for the hours they have worked.
+      </p>
+      <div class="qualifications">
+        <strong>Qualifications Required:</strong>
+        <ul>
+          <li>Degree in Computer Science or Finance</li>
+          <li>Strong understanding of Maths and English</li>
+          <li>Knowledge of database systems involving employee wages and performance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <h2>Web Developer</h2>
+      <p>
+        Our Web Developers are in charge of the primary creation of websites for our clients. Their work must be of a
+		high standard and fit the needs of the client.
+      </p>
+      <div class="qualifications">
+        <strong>Qualifications Required:</strong>
+        <ul>
+          <li>Degree in Computer Science</li>
+          <li>Experience with HTML, CSS, JavaScript</li>
+          <li>Previous experience with website creation</li>
+          <li>Good problem-solving and debugging skills</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <h2>CSS Secondary Developer</h2>
+      <p>
+        Our CSS Secondary Developer is tasked to assist our Web Developers with anything relating to CSS. They must also
+        be able to produce simple but effective CSS code which can be taught to others.		
+      </p>
+      <div class="qualifications">
+        <strong>Qualifications Required:</strong>
+        <ul>
+          <li>Degree in Computer Science or Web Development</li>
+          <li>Experience using Notepad++</li>
+          <li>Strong understanding of design principles</li>
+          <li>Ability to collaborate effectively with Managers, Web Developers and clients</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <h2>Project Manager</h2>
+      <p>
+        Our Project Managers ensure that all projects are delivered on time, within scope, and meet the company’s quality standards.
+      </p>
+      <div class="qualifications">
+        <strong>Qualifications Required:</strong>
+        <ul>
+          <li>Experience managing digital or web development projects</li>
+          <li>Excellent organisational and communication skills</li>
+          <li>Good time management skills</li>
+          <li>Ability to coordinate teams</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="Application Page.html" 
+         style="background-color: #23485c; 
+                color: white; 
+                padding: 15px 40px; 
+                text-decoration: none; 
+                font-size: 20px; 
+                border-radius: 8px; 
+                transition: background-color 0.3s ease;">
+        Apply Now
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <p>07349 483261</p>
+    <p>GU22 9DL</p>
+    <p>hotbeanswebdev@outlook.com</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>

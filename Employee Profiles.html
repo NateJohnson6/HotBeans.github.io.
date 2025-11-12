@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Profiles</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23485c;
+    padding: 10px 30px;
+  }
+
+  .logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #1b3749;
+  }
+
+  .sidebar a.active {
+    background-color: #1b3749;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #23485c;
+    color: white;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .employee-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .employee-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease;
+  }
+
+  .employee-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .employee-card img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+	display: block;
+  }
+
+  .employee-card h3 {
+    font-size: 22px;
+    color: #23485c;
+    margin-bottom: 5px;
+  }
+
+  .employee-card h4 {
+    font-size: 18px;
+    color: #1b3749;
+    margin-bottom: 10px;
+  }
+
+  .employee-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .footer {
+    background-color: #23485c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c4f2b5;
+  }
+
+  .footer p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #c4f2b5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .employee-card img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+
+    .footer h2 {
+      font-size: 22px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="logo.png.png" alt="Hot Beans Logo">
+    </div>
+
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="Company Profile.html">Company Profile</a>
+      <a href="Employee Profiles.html" class="active">Employee Profiles</a>
+      <a href="Web Development Courses.html">Web Development Courses</a>
+      <a href="About Us.html">About Us</a>
+      <a href="Job Specification.html">Job Specification</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>Employee Profiles</h1>
+    <p>Meet the team behind Hot Beans Web Development</p>
+  </div>
+
+  <div class="employee-section">
+    <div class="employee-card">
+      <img src="employee1.jpg" alt="Employee 1">
+      <h3>Tim Milton</h3>
+      <h4>CEO of Hot Beans</h4>
+      <p>Qualifications: Degree in Computer Science, A-level IT, A-level Maths</p>
+    </div>
+
+    <div class="employee-card">
+      <img src="employee2.jpg" alt="Employee 2">
+      <h3>Mark Kenny</h3>
+      <h4>Javascript Primary Developer</h4>
+      <p>Qualifications: Javascript further training course, Degree in Maths, A-level Computer Science</p>
+    </div>
+
+    <div class="employee-card">
+      <img src="employee3.jpg" alt="Employee 3">
+      <h3>Steve Adams</h3>
+      <h4>CSS Primary Developer</h4>
+      <p>Qualifications: CSS further training course, Masters Degree in IT, A-level Computer Science</p>
+    </div>
+
+    <div class="employee-card">
+      <img src="employee4.jpg" alt="Employee 4">
+      <h3>Rocco Dexter</h3>
+      <h4>HTML Primary Developer</h4>
+      <p>Qualifications: HTML further training course, Degree in IT, A-level English, A-level Maths</p>
+    </div>
+
+    <div class="employee-card">
+      <img src="employee5.jpg" alt="Employee 5">
+      <h3>Sophia Lindsay</h3>
+      <h4>Trainee Web Developer</h4>
+      <p>Qualifications: Ongoing Degree in Computer Science, A-level IT, A-level Maths</p>
+    </div>
+
+    <div class="employee-card">
+      <img src="employee6.jpg" alt="Employee 6">
+      <h3>Emily Patrick</h3>
+      <h4>Advanced Web Developer</h4>
+      <p>Qualifications: Masters Degree in Computer Science, A-level IT, A-level Further Maths</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <p>07349 483261</p>
+    <p>GU22 9DL</p>
+    <p>hotbeanswebdev@outlook.com</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>

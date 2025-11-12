@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Courses</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23485c;
+    padding: 10px 30px;
+  }
+
+  .logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #1b3749;
+  }
+
+  .sidebar a.active {
+    background-color: #1b3749;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #23485c;
+    color: white;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .course-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+
+  .course-card h2 {
+    color: #23485c;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .course-card p {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  .course-card ul {
+    margin: 10px 0 20px 25px;
+  }
+
+  .course-card li {
+    margin-bottom: 8px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #23485c;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #1b3749;
+  }
+
+  .footer {
+    background-color: #23485c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c4f2b5;
+  }
+
+  .footer p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #c4f2b5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .course-section {
+      margin: 40px 20px;
+      padding: 0;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+
+    .footer h2 {
+      font-size: 22px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="logo.png.png" alt="Hot Beans Logo">
+    </div>
+
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="Company Profile.html">Company Profile</a>
+      <a href="Employee Profiles.html">Employee Profiles</a>
+      <a href="Web Development Courses.html" class="active">Web Development Courses</a>
+      <a href="About Us.html">About Us</a>
+      <a href="Job Specification.html">Job Specification</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>Web Development Courses</h1>
+    <p>Recommended courses to develop your web development skills</p>
+  </div>
+
+  <div class="course-section">
+    <div class="course-card">
+      <h2>W3Schools Web Development Course</h2>
+      <p>
+        W3Schools offers users a wide range of different training and practice courses for everthing surrounding
+		website development. This includes HTML, CSS and Javacript. It also allows users to view and try out 
+		new code by using examples of what each code does.
+      </p>
+      <ul>
+        <li>Learn HTML, CSS and JavaScript</li>
+        <li>Coding examples to boost understanding</li>
+        <li>Earn certificates for completed topics</li>
+      </ul>
+      <a href="https://www.w3schools.com" target="_blank" class="button">Visit Course</a>
+    </div>
+
+    <div class="course-card">
+      <h2>Codecademy Web Development Course</h2>
+      <p>
+        Codecademy provides easy to understand coding lessons for their users. This allows users to experiment
+		and experience creating their own code. It allows users to see how coding works and provides the results
+		of their code.
+      </p>
+      <ul>
+        <li>Step by step learning for beginners</li>
+        <li>Focus on HTML, CSS and JavaScript</li>
+        <li>Quizzes and practice questions to test user undertanding</li>
+      </ul>
+      <a href="https://www.codecademy.com/learn/paths/web-development" target="_blank" class="button">Visit Course</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <p>07349 483261</p>
+    <p>GU22 9DL</p>
+    <p>hotbeanswebdev@outlook.com</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>

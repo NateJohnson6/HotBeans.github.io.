@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23485c;
+    padding: 10px 30px;
+  }
+
+  .logo img {
+    height: 120px;
+    width: auto;
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #1b3749;
+  }
+
+  .sidebar a.active {
+    background-color: #1b3749;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #23485c;
+    color: white;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .form-section {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #23485c;
+  }
+
+  input, select, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    resize: none;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  button {
+    background-color: #23485c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1b3749;
+  }
+
+  .footer {
+    background-color: #23485c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c4f2b5;
+  }
+
+  .footer p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #c4f2b5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .form-section {
+      margin: 30px 20px;
+      padding: 25px;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+
+    .footer h2 {
+      font-size: 22px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="logo.png.png" alt="Hot Beans Logo">
+    </div>
+
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="Company Profile.html">Company Profile</a>
+      <a href="Employee Profiles.html">Employee Profiles</a>
+      <a href="Careers Page.html">Careers Page</a>
+      <a href="Web Development Courses.html">Web Development Courses</a>
+      <a href="About Us.html">About Us</a>
+      <a href="Job Specification.html">Job Specification</a>
+      <a href="Application Page.html" class="active">Apply</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>Application</h1>
+    <p>Apply for one of our exciting positions at Hot Beans Web Development</p>
+  </div>
+
+  <div class="form-section">
+    <form onsubmit="alert('Thank you for applying! Your application has been submitted.'); return false;">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="job">Select Job Role:</label>
+      <select id="job" name="job" required>
+        <option value="" disabled selected>Select a job</option>
+        <option>Javascript Assistant Developer</option>
+        <option>Assistant Management Director</option>
+        <option>Web Developer</option>
+        <option>CSS Secondary Developer</option>
+        <option>Project Manager</option>
+      </select>
+
+      <label for="experience">Relevant Experience:</label>
+      <textarea id="experience" name="experience" placeholder="Briefly describe your experience and skills..." required></textarea>
+
+      <label for="cv">Upload CV:</label>
+      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <p>07349 483261</p>
+    <p>GU22 9DL</p>
+    <p>hotbeanswebdev@outlook.com</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>

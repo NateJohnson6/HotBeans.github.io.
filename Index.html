@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hot Beans Home Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .logo {
+    background-color: #23485c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .logo img {
+    height: 120px;
+    width: auto;
+  }
+
+  .sidebar {
+    background-color: #23485c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0;
+	margin: 0;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #1b3749;
+  }
+
+  .sidebar a.active {
+    background-color: #1b3749;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #23485c;
+    color: white;
+    padding: 20px;
+	margin: 0;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .apply-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+
+  .apply-section img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .button-class {
+    background-color: #23485c;
+    border: none;
+    color: white;
+    padding: 25px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-class:hover {
+    background-color: #1b3749;
+  }
+
+  .footer {
+    background-color: #23485c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #c4f2b5;
+  }
+
+  .footer p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #c4f2b5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .sidebar {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo {
+      position: relative;
+      justify-content: center;
+    }
+
+    .apply-section {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .apply-section img {
+      height: 160px;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+
+    .footer h2 {
+      font-size: 22px;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.png.png" alt="Hot Beans Logo">
+  </div>
+
+  <div class="sidebar">
+    <a href="Company Profile.html" class="active">Company Profile</a>
+    <a href="Employee Profiles.html">Employee Profiles</a>
+    <a href="Web Development Courses.html">Web Development Courses</a>
+    <a href="About Us.html">About Us</a>
+    <a href="Job Specification.html">Job Specification</a>
+  </div>
+
+  <div class="header">
+    <h1>Hot Beans</h1>
+    <p>Web Development</p>
+  </div>
+
+  <div class="apply-section">
+    <img src="Employee photo 1.jpg" alt="Team Photo Left">
+    <a href="Application Page.html" class="button-class">Apply Now!</a>
+    <img src="Team photo 1.jpg" alt="Team Photo Right">
+  </div>
+
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <p>07349 483261</p>
+    <p>GU22 9DL</p>
+    <p>hotbeanswebdev@outlook.com</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
